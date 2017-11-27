@@ -1,0 +1,28 @@
+{
+  "name": "ds_store-cleaner",
+  "version": "0.0.1",
+  "description": ".DS_Store cleaner",
+  "main": "index.js",
+  "scripts": {
+    "pack": "npm run pack:mac & npm run pack:win",
+    "pack:mac": "pkg index.js -o ./dist/DS_Store-cleaner  -t node8-macos-x64",
+    "pack:win": "pkg index.js -o ./dist/DS_Store-cleaner.exe  -t node8-win-x64"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lilijialiang/.DS_Store-cleaner.git"
+  },
+  "keywords": [
+    ".DS_Store",
+    "cleaner"
+  ],
+  "author": "lijialiang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lilijialiang/.DS_Store-cleaner/issues"
+  },
+  "homepage": "https://github.com/lilijialiang/.DS_Store-cleaner#readme",
+  "dependencies": {
+    "del": "^3.0.0"
+  }
+}
